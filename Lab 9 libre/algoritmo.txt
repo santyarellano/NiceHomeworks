@@ -1,0 +1,32 @@
+------------------------------------------- MAIN ---------------------------------------------
+incluir biblioteca
+
+inicio ()
+	imprimir menú 
+		"MENU"
+		"1. Encriptar mensaje"
+		"2. Decriptar mensaje"
+
+	leer opcion elegida()
+	switch
+		caso 1: encriptar_mensaje()
+		imprimir "el mensaje encriptado es: " + mensaje encriptado
+ 		caso 2: decriptar_mensaje()
+		imprimir "el mensaje decriptado es: " + mensaje decriptado	
+
+fin()
+----------------------------------------------------------------------------------------------
+
+--------------------------------------- BIBLIOTECA -------------------------------------------
+incluir stdio
+
+funcion encriptar_mensaje()
+	leer mensaje()
+	ciclo (tamaño de letras)
+		letra[i] += 5
+
+funcion decriptar_mensaje()
+	leer mensaje()
+	ciclo (tamaño de letras)
+		letra[i] -= 5
+----------------------------------------------------------------------------------------------
